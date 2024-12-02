@@ -1,102 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Skills Platform</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            background-color: #2c3e50;
-        }
-        .navbar a {
-            color: #fff;
-        }
-        .profile-card, .job-posting, .skill-form {
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-        }
-        .profile-card img {
-            border-radius: 50%;
-        }
-        .btn-red {
-            background-color: #e74c3c;
-            color: white;
-        }
-        .btn-blue {
-            background-color: #3498db;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Connect Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero-section {
+      background-color: #6c757d;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .card {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Skill Platform</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Job Postings</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container mt-5">
-        <!-- Profile Card -->
-        <div class="profile-card text-center">
-            <img src="https://via.placeholder.com/100" alt="User Image" class="mb-3">
-            <h3>John Doe</h3>
-            <p>Graphic Designer</p>
-            <button class="btn btn-red">View Profile</button>
-        </div>
-
-        <!-- Skill Form -->
-        <div class="skill-form">
-            <h4>Professional Skills</h4>
-            <form>
-                <div class="mb-3">
-                    <label for="skill" class="form-label">Skill</label>
-                    <input type="text" class="form-control" id="skill" placeholder="Enter a skill">
-                </div>
-                <div class="mb-3">
-                    <label for="location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="location" placeholder="Enter your location">
-                </div>
-                <button type="submit" class="btn btn-blue">Save</button>
-            </form>
-        </div>
-
-        <!-- Job Postings -->
-        <div class="job-posting">
-            <h4>Available Job Postings</h4>
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Graphic Design - Remote
-                    <span class="badge bg-success">Apply</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Plumbing - Onsite
-                    <span class="badge bg-success">Apply</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Tutoring - Hybrid
-                    <span class="badge bg-success">Apply</span>
-                </li>
-            </ul>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SkillConnect</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="#">Sign Up</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1>Find Skilled Professionals Near You</h1>
+    <p>Connecting clients and skilled individuals for seamless service delivery.</p>
+    <a href="#" class="btn btn-light btn-lg">Get Started</a>
+  </div>
+
+  <!-- Features Section -->
+  <div id="features" class="container my-5">
+    <h2 class="text-center mb-4">Platform Features</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>User Profiles</h5>
+          <p>Showcase skills, portfolios, certifications, and availability.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Search & Filters</h5>
+          <p>Find professionals by skill, location, or ratings.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Geo-Location Matching</h5>
+          <p>Connect with professionals near your location.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <div id="how-it-works" class="container my-5">
+    <h2 class="text-center mb-4">How It Works</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/500" alt="How it works" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <ol>
+          <li>Sign up and create a profile.</li>
+          <li>Browse or search for skilled professionals.</li>
+          <li>Contact professionals or make a booking.</li>
+          <li>Rate and review the service.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 SkillConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
