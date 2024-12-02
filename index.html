@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Skills Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar a {
+            color: #fff;
+        }
+        .profile-card, .job-posting, .skill-form {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .profile-card img {
+            border-radius: 50%;
+        }
+        .btn-red {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .btn-blue {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Skill Platform</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Job Postings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Profile Card -->
+        <div class="profile-card text-center">
+            <img src="https://via.placeholder.com/100" alt="User Image" class="mb-3">
+            <h3>John Doe</h3>
+            <p>Graphic Designer</p>
+            <button class="btn btn-red">View Profile</button>
+        </div>
+
+        <!-- Skill Form -->
+        <div class="skill-form">
+            <h4>Professional Skills</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="skill" class="form-label">Skill</label>
+                    <input type="text" class="form-control" id="skill" placeholder="Enter a skill">
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter your location">
+                </div>
+                <button type="submit" class="btn btn-blue">Save</button>
+            </form>
+        </div>
+
+        <!-- Job Postings -->
+        <div class="job-posting">
+            <h4>Available Job Postings</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Graphic Design - Remote
+                    <span class="badge bg-success">Apply</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Plumbing - Onsite
+                    <span class="badge bg-success">Apply</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Tutoring - Hybrid
+                    <span class="badge bg-success">Apply</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
